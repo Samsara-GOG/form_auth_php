@@ -90,14 +90,14 @@ if ($_POST) {
     }
 
     // renvoi en cas d'erreur désactivé pour le moment
-    // if (!isset($_SESSION['login'])) {
-    //     // l'utilisateur ne peut pas accéder à la page
-    //     // renvoi vers home page
-    //     echo '<p>Vous avez échoué à vous connecter, vous avez donc été redirigé vers la page publique</p>';
-    //     $url = 'index.php';
-    //     header('Location: {$url}', true, 301);
-    //     exit();
-    // }   
+    if (!isset($_SESSION['login'])) {
+    // l'utilisateur ne peut pas accéder à la page
+    // renvoi vers home page
+    //    echo '<p>Vous avez échoué à vous connecter, vous avez donc été redirigé vers la page publique</p>';
+        $url = 'index.php';
+        header('Location: {$url}', true, 301);
+        exit();
+    }   
 }
 
 // Affichage du rendu du template
