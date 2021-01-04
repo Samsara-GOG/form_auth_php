@@ -1,9 +1,4 @@
 vendor
 templates/password-verify.html.twig
-templates/private.html.twig
-config/
-public/config.php
 public/email.php
-public/index.php
 public/password-verify.php
-public/private.php
