@@ -2,3 +2,4 @@ vendor
 templates/password-verify.html.twig
 public/email.php
 public/password-verify.php
+config/config.yaml
